@@ -25,6 +25,8 @@ func main() {
 		opt.a.run(fileInfos)
 	case opt.isT():
 		opt.t.run(fileInfos)
+	case opt.isL():
+		opt.l.run(fileInfos)
 	default:
 		n := normal{}
 		n.run(fileInfos)

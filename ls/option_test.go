@@ -95,3 +95,46 @@ func Test_t_isT(t1 *testing.T) {
 		})
 	}
 }
+
+func Test_l_isL(t *testing.T) {
+	type fields struct {
+		bool *bool
+	}
+	tests := []struct {
+		name   string
+		fields fields
+		want   bool
+	}{
+		{
+			name: "false",
+			fields: fields{
+				bool: falsePtr,
+			},
+			want: false,
+		},
+		{
+			name: "true",
+			fields: fields{
+				bool: truePtr,
+			},
+			want: true,
+		},
+		{
+			name: "nil",
+			fields: fields{
+				bool: nil,
+			},
+			want: false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			l := &l{
+				bool: tt.fields.bool,
+			}
+			if got := l.isL(); got != tt.want {
+				t.Errorf("isL() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
