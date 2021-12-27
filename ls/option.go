@@ -42,7 +42,7 @@ func newOption() *option {
 }
 
 func (a *a) isA() bool {
-	return a != nil && *a.bool
+	return a != nil && a.bool != nil && *a.bool
 }
 
 func (a *a) run(fileInfos []os.FileInfo) {
@@ -52,7 +52,7 @@ func (a *a) run(fileInfos []os.FileInfo) {
 }
 
 func (t *t) isT() bool {
-	return t != nil && *t.bool
+	return t != nil && t.bool != nil && *t.bool
 }
 
 func (t *t) run(fileInfos []os.FileInfo) {
