@@ -15,6 +15,7 @@ int __tolower(int c);
 int __toupper(int c);
 
 // <string.h>
+char *__strcpy(char *dst, const char *src);
 size_t __strlen(const char *s);
 
 #endif
