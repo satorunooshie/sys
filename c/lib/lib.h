@@ -2,6 +2,7 @@
 #define LIB_H
 
 #include <stddef.h>
+#include <stdlib.h>
 
 // <ctype.h>
 int __isalnum(int c);
@@ -16,6 +17,7 @@ int __toupper(int c);
 
 // <string.h>
 char *__strcpy(char *dst, const char *src);
+char *__strdup(const char *s1);
 char *__strncpy(char *dst, const char *src, size_t len);
 size_t __strlen(const char *s);
 
