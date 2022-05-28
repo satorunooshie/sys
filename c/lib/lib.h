@@ -16,6 +16,7 @@ int __tolower(int c);
 int __toupper(int c);
 
 // <string.h>
+char __strcmp(const char *s1, const char *s2);
 char *__strcpy(char *dst, const char *src);
 char *__strdup(const char *s1);
 char *__strncpy(char *dst, const char *src, size_t len);
