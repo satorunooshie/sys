@@ -2,13 +2,13 @@
 
 char __strcmp(const char *s1, const char *s2)
 {
-    size_t i;
-    i = 0;
-    while (s1[i] && s2[i])
+    int res;
+    res = 0;
+    while (1)
     {
-        if (s1[i] != s2[i])
-            return (s1[i] - s2[i]);
-        i++;
+        res = *s1 - *s2++;
+        if (res != 0 || !*s1++)
+            break ;
     }
-    return (s1[i] - s2[i]);
+    return (res);
 }
