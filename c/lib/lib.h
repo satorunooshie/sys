@@ -25,6 +25,7 @@ char *__strcpy(char *dst, const char *src);
 char *__strdup(const char *s1);
 char *__strncat(char *restrict s1, const char *restrict s2, size_t n);
 char *__strncpy(char *dst, const char *src, size_t len);
+char *__strrchr(const char *s, int c);
 char *__strstr(const char *haystack, const char *needle);
 int __strcmp(const char *s1, const char *s2);
 int __strncmp(const char *s1, const char *s2, size_t n);
