@@ -2,9 +2,8 @@
 
 char *__strchr(const char *s, int c)
 {
-    while (1) {
+    while (*s) {
         if (*s == c) return ((char *)s);
-        if (!*s) break ;
         s++;
     }
     return ((char *)NULL);
