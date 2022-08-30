@@ -20,6 +20,7 @@ int __atoi(const char *str);
 
 // <string.h>
 char *__strcat(char *restrict s1, const char *restrict s2);
+char *__strchr(const char *s, int c);
 char *__strcpy(char *dst, const char *src);
 char *__strdup(const char *s1);
 char *__strncat(char *restrict s1, const char *restrict s2, size_t n);
