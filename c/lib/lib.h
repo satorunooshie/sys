@@ -15,6 +15,9 @@ int __isupper(int c);
 int __tolower(int c);
 int __toupper(int c);
 
+// <stdlib.h>
+int __atoi(const char *str);
+
 // <string.h>
 char *__strcat(char *restrict s1, const char *restrict s2);
 char *__strcpy(char *dst, const char *src);
