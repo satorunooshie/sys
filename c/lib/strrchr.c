@@ -4,9 +4,8 @@ char *__strrchr(const char *s, int c)
 {
     char *res;
     res = NULL;
-    while (1) {
+    while (*s) {
         if (*s == c) res = (char *)s;
-        if (!*s) break ;
         s++;
     }
     return (res);
