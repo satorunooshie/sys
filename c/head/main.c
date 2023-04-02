@@ -22,10 +22,6 @@ int main(int argc, char *argv[])
     while ((opt = getopt_long(argc, argv, "n:", longopts, NULL)) != -1) {
         switch (opt) {
             case 'n':
-                if (optarg == NULL) {
-                    fprintf(stderr, "UsageError: %s [-n LINES] [FILE ...]\n", argv[0]);
-                    exit(1);
-                }
                 nlines = atol(optarg);
                 break;
             case 'h':
