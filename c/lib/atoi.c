@@ -2,7 +2,7 @@
 
 int __atoi(const char *str)
 {
-    signed int sum = 0;
+    signed long long sum = 0;
     unsigned int isminus = 0;
 
     if (*str == '+') str++;

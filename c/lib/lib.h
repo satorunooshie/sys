@@ -18,6 +18,10 @@ int __toupper(int c);
 // <stdlib.h>
 int __atoi(const char *str);
 
+// <stdio.h>
+int __printf(const char *restrict format, ...);
+int __putchar(int c);
+
 // <string.h>
 char *__strcat(char *restrict s1, const char *restrict s2);
 char *__strchr(const char *s, int c);
